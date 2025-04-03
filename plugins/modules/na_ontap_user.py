@@ -79,7 +79,7 @@ options:
       second_authentication_method:
         description: when using ssh, optional additional authentication method for MFA.
         type: str
-        choices: ['none', 'password', 'publickey', 'nsswitch']
+        choices: ['none', 'password', 'publickey', 'nsswitch', 'totp']
   authentication_method:
     description:
       - Authentication method for the application.  If you need more than one method, use C(application_dicts).
